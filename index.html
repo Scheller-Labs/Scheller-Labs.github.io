@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 
-<html class="light" lang="en" style=""><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Scheller Labs | The Codex of Modern Intelligence</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&amp;family=Hanken+Grotesk:wght@300;400;600&amp;family=JetBrains+Mono:wght@400;700&amp;family=EB+Garamond:ital,wght@0,400;0,600;1,400;1,600&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
+<html class="light" lang="en" style="">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Scheller Labs | The Codex of Modern Intelligence</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&amp;family=Hanken+Grotesk:wght@300;400;600&amp;family=JetBrains+Mono:wght@400;700&amp;family=EB+Garamond:ital,wght@0,400;0,600;1,400;1,600&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
             theme: {
@@ -85,212 +91,332 @@
                         "modern-serif": ["EB Garamond"]
                     },
                     "fontSize": {
-                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
-                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
-                        "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
-                        "code-sm": ["14px", {"lineHeight": "20px", "fontWeight": "500"}],
-                        "headline-sm": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
-                        "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
-                        "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "700"}]
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "headline-md": ["32px", { "lineHeight": "40px", "fontWeight": "600" }],
+                        "code-sm": ["14px", { "lineHeight": "20px", "fontWeight": "500" }],
+                        "headline-sm": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "label-caps": ["12px", { "lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "700" }]
                     }
                 },
             },
         }
     </script>
-<style>body { background-color: #F4EBD0; color: #2D2926; }
-        .ink-border { border: 1.5px solid rgba(61, 43, 31, 0.15); box-shadow: 2px 2px 0px rgba(61, 43, 31, 0.05); }
-        .obsidian-border { border: 1px solid rgba(255, 255, 255, 0.1); }
-        .vellum-glass { background: rgba(255, 255, 255, 0.4); backdrop-filter: blur(12px); border: 1px solid rgba(61, 43, 31, 0.1); }
-        .sketch-overlay { opacity: 0.08; pointer-events: none; mix-blend-mode: multiply; }
-        .crosshair::before { content: ''; position: absolute; top: -5px; left: -5px; width: 10px; height: 10px; border-top: 1px solid #3D2B1F; border-left: 1px solid #3D2B1F; }
-        .crosshair::after { content: ''; position: absolute; bottom: -5px; right: -5px; width: 10px; height: 10px; border-bottom: 1px solid #3D2B1F; border-right: 1px solid #3D2B1F; }
-        .ledger-line { border-bottom: 1px solid #3D2B1F; transition: border-color 0.3s ease; }
-        .ledger-line:focus-within { border-color: #BF40BF; }
-        .marginalia { font-family: 'JetBrains Mono'; font-size: 10px; text-transform: uppercase; color: rgba(61, 43, 31, 0.5); writing-mode: vertical-rl; }
-        .italic-modern { font-family: 'EB Garamond', serif; font-style: italic; }
-        .text-neon-light { color: #00FFFF; }
-        .bg-neon-light { background-color: #00FFFF; }
-        .border-neon-light { border-color: #00FFFF; }
-        .shadow-neon-light { box-shadow: 0 0 8px #00FFFF; }
-        .hover\:text-neon-light:hover { color: #00FFFF; }
-        .hover\:border-neon-light:hover { border-color: #00FFFF; }</style>
+    <style>
+        body {
+            background-color: #F4EBD0;
+            color: #2D2926;
+        }
+
+        .ink-border {
+            border: 1.5px solid rgba(61, 43, 31, 0.15);
+            box-shadow: 2px 2px 0px rgba(61, 43, 31, 0.05);
+        }
+
+        .obsidian-border {
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .vellum-glass {
+            background: rgba(255, 255, 255, 0.4);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(61, 43, 31, 0.1);
+        }
+
+        .sketch-overlay {
+            opacity: 0.08;
+            pointer-events: none;
+            mix-blend-mode: multiply;
+        }
+
+        .crosshair::before {
+            content: '';
+            position: absolute;
+            top: -5px;
+            left: -5px;
+            width: 10px;
+            height: 10px;
+            border-top: 1px solid #3D2B1F;
+            border-left: 1px solid #3D2B1F;
+        }
+
+        .crosshair::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            right: -5px;
+            width: 10px;
+            height: 10px;
+            border-bottom: 1px solid #3D2B1F;
+            border-right: 1px solid #3D2B1F;
+        }
+
+        .ledger-line {
+            border-bottom: 1px solid #3D2B1F;
+            transition: border-color 0.3s ease;
+        }
+
+        .ledger-line:focus-within {
+            border-color: #BF40BF;
+        }
+
+        .marginalia {
+            font-family: 'JetBrains Mono';
+            font-size: 10px;
+            text-transform: uppercase;
+            color: rgba(61, 43, 31, 0.5);
+            writing-mode: vertical-rl;
+        }
+
+        .italic-modern {
+            font-family: 'EB Garamond', serif;
+            font-style: italic;
+        }
+
+        .text-neon-light {
+            color: #00FFFF;
+        }
+
+        .bg-neon-light {
+            background-color: #00FFFF;
+        }
+
+        .border-neon-light {
+            border-color: #00FFFF;
+        }
+
+        .shadow-neon-light {
+            box-shadow: 0 0 8px #00FFFF;
+        }
+
+        .hover\:text-neon-light:hover {
+            color: #00FFFF;
+        }
+
+        .hover\:border-neon-light:hover {
+            border-color: #00FFFF;
+        }
+    </style>
 </head>
+
 <body class="font-body-md overflow-x-hidden selection:bg-tertiary-fixed-dim selection:text-primary">
-<!-- TopAppBar -->
-<header class="fixed top-0 z-50 w-full bg-surface-bright/80 backdrop-blur-md border-b border-on-surface/20">
-<div class="flex justify-between items-center w-full px-margin-desktop py-4 max-w-max-width mx-auto">
-<div class="font-headline-sm text-headline-sm font-bold tracking-tighter text-on-surface">Scheller Labs</div>
-<nav class="hidden md:flex items-center gap-8">
-<a class="text-tertiary-fixed-dim font-bold border-b-2 border-tertiary-fixed-dim pb-1 font-label-caps text-label-caps" href="#">Repositories</a>
-<a class="text-on-surface-variant font-label-caps text-label-caps hover:text-tertiary-fixed-dim transition-colors duration-200" href="#">Documentation</a>
-<a class="text-on-surface-variant font-label-caps text-label-caps hover:text-tertiary-fixed-dim transition-colors duration-200" href="#">The Codex</a>
-<a class="text-on-surface-variant font-label-caps text-label-caps hover:text-tertiary-fixed-dim transition-colors duration-200" href="#">Methodology</a>
-</nav>
-<div class="flex items-center gap-6">
-<span class="material-symbols-outlined text-on-surface cursor-pointer hover:text-tertiary-fixed-dim">search</span>
-<button class="bg-primary-container text-surface-bright px-6 py-2 font-label-caps text-label-caps rounded-none hover:opacity-80 active:scale-95 transition-all">Sign In</button>
-</div>
-</div>
-</header>
-<main class="relative pt-24">
-<!-- Marginalia Decoration -->
-<aside class="absolute left-8 top-1/2 -translate-y-1/2 hidden xl:block marginalia h-64 border-r border-on-surface/10 pr-2">
-        AGENT_STATUS: ACTIVE // SECTOR_07 // LATENCY: 14MS
-    </aside>
-<!-- Hero Section -->
-<section class="relative px-margin-mobile md:px-margin-desktop py-20 overflow-hidden">
-<div class="max-w-max-width mx-auto relative z-10">
-<div class="flex flex-col items-start gap-4">
-<span class="font-label-caps text-label-caps text-tertiary-fixed-dim tracking-[0.2em]">ANNO DOMINI MMXXIV</span>
-<h1 class="font-display-lg text-display-lg md:text-[84px] leading-none text-on-surface max-w-3xl">Scheller Labs</h1>
-<p class="font-headline-sm text-headline-sm text-on-surface-variant max-w-xl border-l-2 border-tertiary-fixed-dim pl-6 py-2 font-body-lg italic">
-                    The Codex of Modern Intelligence. Bridging the gap between the intellectual rigor of the Renaissance and the frontier of agentic AI.
-                </p>
-<div class="mt-8 flex gap-4">
-<button class="bg-primary-container text-tertiary-fixed-dim px-8 py-4 font-label-caps text-label-caps border-b-2 border-tertiary-fixed-dim flex items-center gap-2 group transition-all">
-                        EXPLORE_THE_ARCHIVE
-                        <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
-</button>
-<button class="px-8 py-4 font-label-caps text-label-caps border border-on-surface/20 flex items-center gap-2 relative crosshair">
+    <!-- TopAppBar -->
+    <header class="fixed top-0 z-50 w-full bg-surface-bright/80 backdrop-blur-md border-b border-on-surface/20">
+        <div class="flex justify-between items-center w-full px-margin-desktop py-4 max-w-max-width mx-auto">
+            <div class="font-headline-sm text-headline-sm font-bold tracking-tighter text-on-surface">Scheller Labs
+            </div>
+            <nav class="hidden md:flex items-center gap-8">
+                <a class="text-tertiary-fixed-dim font-bold border-b-2 border-tertiary-fixed-dim pb-1 font-label-caps text-label-caps"
+                    href="#">Repositories</a>
+            </nav>
+            <div class="flex items-center gap-6">
+                <!-- <span class="material-symbols-outlined text-on-surface cursor-pointer hover:text-tertiary-fixed-dim">search</span> -->
+                <!-- <button class="bg-primary-container text-surface-bright px-6 py-2 font-label-caps text-label-caps rounded-none hover:opacity-80 active:scale-95 transition-all">Sign In</button> -->
+            </div>
+        </div>
+    </header>
+    <main class="relative pt-24">
+        <!-- Marginalia Decoration -->
+        <aside
+            class="absolute left-8 top-1/2 -translate-y-1/2 hidden xl:block marginalia h-64 border-r border-on-surface/10 pr-2">
+            AGENT_STATUS: ACTIVE // AGENT_HARNESS: ONLINE // LATENCY: 14MS
+        </aside>
+        <!-- Hero Section -->
+        <section class="relative px-margin-mobile md:px-margin-desktop py-20 overflow-hidden">
+            <div class="max-w-max-width mx-auto relative z-10">
+                <div class="flex flex-col items-start gap-4">
+                    <span class="font-label-caps text-label-caps text-tertiary-fixed-dim tracking-[0.2em]">ANNO DOMINI
+                        MMXXIV</span>
+                    <h1 class="font-display-lg text-display-lg md:text-[84px] leading-none text-on-surface max-w-3xl">
+                        Scheller Labs</h1>
+                    <p
+                        class="font-headline-sm text-headline-sm text-on-surface-variant max-w-xl border-l-2 border-tertiary-fixed-dim pl-6 py-2 font-body-lg italic">
+                        The Codex of Modern Intelligence. Experiments pushing the capabilities of agentic AI and
+                        physical AI systems.
+                    </p>
+                    <div class="mt-8 flex gap-4">
+                        <button
+                            class="bg-primary-container text-tertiary-fixed-dim px-8 py-4 font-label-caps text-label-caps border-b-2 border-tertiary-fixed-dim flex items-center gap-2 group transition-all">
+                            EXPLORE_THE_ARCHIVE
+                            <span
+                                class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                        </button>
+                        <!--<button class="px-8 py-4 font-label-caps text-label-caps border border-on-surface/20 flex items-center gap-2 relative crosshair">
                         METHODOLOGY.PDF
+                    </button>-->
+                    </div>
+                </div>
+            </div>
+            <!-- Sketch Background Element -->
+            <div class="absolute right-0 top-0 w-1/2 h-full sketch-overlay flex items-center justify-center opacity-20">
+                <img alt="Neural network sketch" class="w-full h-full object-contain grayscale"
+                    data-alt="A detailed, fine-ink technical sketch of a human brain merging with a complex neural network. The style mimics an archival Renaissance parchment drawing with intricate hatching, meticulous linework, and annotated scientific observations in a fluid script. The background is a warm, aged vellum texture, creating a scholarly and sophisticated atmosphere for a modern AI research laboratory."
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAeSUUzWrtH-W8eJ-4iHcEBIM9kTeGWZgNd5OABri7m2gg2MLurSXFefaIJhHDT1wx-Pc86VGAhTWl7NcGOiongmYhH04SKDRZhuYixTr0qcj-_YIgKkM45mV8-T45iO2Gfc0isiAVpJ82di9JuqerhPxyM5a4Aeft679V-1_VGwsmbA6CQAV9v3Lx1cacF7-bRyjOBxfhB2te5wfF4XCRpyEuxCnt-daZGIvFKsvHRB929ME46wzBhKa5DQzeQrziIIIwmAEBjF94" />
+            </div>
+        </section>
+        <!-- Featured Projects (Bento Grid) -->
+        <section class="px-margin-mobile md:px-margin-desktop py-20 bg-surface-container-low/30">
+            <div class="max-w-max-width mx-auto">
+                <div class="flex items-baseline justify-between mb-12">
+                    <h2 class="font-headline-md text-headline-md">Selected Treatises</h2>
+                    <span class="font-label-caps text-label-caps opacity-50">ARCHIVE_VOLUME_01</span>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+                    <!-- The Codex Card -->
+                    <div
+                        class="md:col-span-8 group relative vellum-glass p-8 min-h-[400px] flex flex-col justify-end overflow-hidden">
+                        <div class="absolute inset-0 z-0">
+                            <img alt="AI Documentation"
+                                class="w-full h-full object-cover opacity-10 grayscale group-hover:scale-105 transition-transform duration-700"
+                                data-alt="A cinematic close-up of a high-resolution digital display showing complex lines of code and generative geometric patterns. The lighting is low-key, focused on the electric cyan glow of the data visualizations. The aesthetic combines cutting-edge technology with an archival feel, featuring subtle film grain and a shallow depth of field."
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4QVIkpT1ZJxiUqedce8UuirVwjUooxnKJ891VNYL2L3oHQuoHrc16WyT9wlQXGi_X7BuEsPdt8uk4nW9Pgci6mHSsfVTl_UXpXbVnnoEFs9AzqmlfLzWYoTbkeVbbzBYDyQIf3LzOMpaXjr4pUZbNmh5pGjIW_s2F8oMTrHbG1XjmCSeLXB7SMh_OWRhLiHCUK3sAGJr4H_GrDJG9GsVJqmrFOZ49xNJkrHO7x4BdV-TrJAkap52hu6DEgSkbt-xLs0LKX2EYVhY" />
+                        </div>
+                        <div class="relative z-10">
+                            <span
+                                class="font-code-sm text-code-sm text-tertiary-fixed-dim bg-primary-container px-3 py-1 mb-4 inline-block">SYSTEM_DOCS</span>
+                            <h3 class="font-headline-md text-headline-md mb-2">The Codex</h3>
+                            <p class="font-body-lg text-body-lg text-on-surface-variant max-w-md mb-6">A living
+                                repository of AI documentation, mapping the neural architectures and symbolic logic used
+                                across the S_LABS ecosystem.</p>
+                            <a class="flex items-center gap-2 font-label-caps text-label-caps hover:text-tertiary-fixed-dim transition-colors underline decoration-dotted"
+                                href="#">READ_FULL_VOLUMES</a>
+                        </div>
+                        <div class="absolute top-4 right-4 text-on-surface/10 font-display-lg select-none">01</div>
+                    </div>
+                    <!-- Agentic Methodology Card -->
+                    <div
+                        class="md:col-span-4 group vellum-glass p-8 flex flex-col justify-between hover:bg-surface-variant/20 transition-all border-l-4 border-l-tertiary-fixed-dim">
+                        <div>
+                            <div
+                                class="w-12 h-12 flex items-center justify-center border border-on-surface/20 mb-8 rounded-full">
+                                <span class="material-symbols-outlined text-tertiary-fixed-dim">hub</span>
+                            </div>
+                            <h3 class="font-headline-sm text-headline-sm mb-4">Agentic Methodology</h3>
+                            <p class="font-body-md text-body-md text-on-surface-variant">Defining the framework for
+                                autonomous agent swarms, focusing on collaborative problem solving and emergent
+                                behavior.</p>
+                        </div>
+                        <div class="mt-8">
+                            <div class="ledger-line py-2 flex justify-between items-center group/item">
+                                <span class="font-label-caps text-label-caps">WHITE_PAPER_V2</span>
+                                <span
+                                    class="material-symbols-outlined text-sm group-hover/item:translate-x-1 transition-transform">east</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Repository Feed (Obsidian Theme) -->
+        <section class="px-margin-mobile md:px-margin-desktop py-24 text-white bg-[#121212]">
+            <div class="max-w-max-width mx-auto flex flex-col md:flex-row gap-20">
+                <div class="w-full md:w-1/3">
+                    <div class="sticky top-32">
+                        <span class="font-label-caps text-label-caps text-white/50">LATEST_COMMITS</span>
+                        <h2 class="font-headline-md text-headline-md mt-4 mb-6 text-white">Open Repository Intelligence
+                        </h2>
+                        <p class="font-body-md text-body-md text-white/70 mb-8 leading-relaxed">Our research is built in
+                            the open. Explore the underlying codebases for our latest model fine-tuning and autonomous
+                            framework implementations at <a class="text-[#00FFFF] underline"
+                                href="https://github.com/Scheller-Labs">github.com/Scheller-Labs</a>.</p>
+                        <div class="p-6 obsidian-border text-white rounded-none relative bg-[#1c1c1c]">
+                            <div class="flex items-center gap-4 mb-4">
+                                <div class="w-2 h-2 rounded-full bg-[#00FFFF] animate-pulse"
+                                    style="box-shadow: 0 0 8px #00FFFF;"></div>
+                                <span class="font-code-sm text-code-sm">SYSTEM_HEARTBEAT: <span
+                                        class="text-[#00FFFF]">STABLE</span></span>
+                            </div>
+                            <div class="font-code-sm text-code-sm opacity-60">Last commit: 4 minutes ago via <span
+                                    class="text-[#00FFFF]">agent_09</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full md:w-2/3 space-y-4">
+                    <!-- Repo Item 1 -->
+                    <div
+                        class="p-6 flex flex-col md:flex-row justify-between items-start md:items-center group hover:border-[#00FFFF] transition-colors cursor-pointer obsidian-border bg-[#1c1c1c]">
+                        <div>
+                            <div class="flex items-center gap-3 mb-1">
+                                <span class="material-symbols-outlined text-white/40 text-sm">folder_open</span>
+                                <h4
+                                    class="font-code-sm text-headline-sm text-white group-hover:text-[#00FFFF] transition-colors">
+                                    Scheller-Labs/prime-reasoner</h4>
+                            </div>
+                            <p class="text-white/60 font-body-md text-sm pl-7">Advanced logic processing for large
+                                language models using chain-of-thought fine-tuning.</p>
+                        </div>
+                        <div class="mt-4 md:mt-0 flex items-center gap-6">
+                            <div class="flex flex-col items-end">
+                                <span class="font-label-caps text-[10px] text-white/40">STARS</span>
+                                <span class="font-code-sm text-white">1.2k</span>
+                            </div>
+                            <div class="w-[1px] h-8 bg-white/10"></div>
+                            <div class="flex flex-col items-end">
+                                <span class="font-label-caps text-[10px] text-[#00FFFF]">ACTIVE</span>
+                                <span class="font-code-sm text-white">MAIN</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Repo Item 2 -->
+                    <div
+                        class="p-6 flex flex-col md:flex-row justify-between items-start md:items-center group hover:border-[#00FFFF] transition-colors cursor-pointer obsidian-border bg-[#1c1c1c]">
+                        <div>
+                            <div class="flex items-center gap-3 mb-1">
+                                <span class="material-symbols-outlined text-white/40 text-sm">folder_open</span>
+                                <h4
+                                    class="font-code-sm text-headline-sm text-white group-hover:text-[#00FFFF] transition-colors">
+                                    Scheller-Labs/atlas-swarm</h4>
+                            </div>
+                            <p class="text-white/60 font-body-md text-sm pl-7">A scalable architecture for coordinating
+                                1000+ autonomous software agents.</p>
+                        </div>
+                        <div class="mt-4 md:mt-0 flex items-center gap-6">
+                            <div class="flex flex-col items-end">
+                                <span class="font-label-caps text-[10px] text-white/40">STARS</span>
+                                <span class="font-code-sm text-white">843</span>
+                            </div>
+                            <div class="w-[1px] h-8 bg-white/10"></div>
+                            <div class="flex flex-col items-end">
+                                <span class="font-label-caps text-[10px] text-[#00FFFF]">DEV</span>
+                                <span class="font-code-sm text-white">V0.9-BETA</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Repo Item 3 -->
+                    <div
+                        class="p-6 flex flex-col md:flex-row justify-between items-start md:items-center group hover:border-[#00FFFF] transition-colors cursor-pointer obsidian-border bg-[#1c1c1c]">
+                        <div>
+                            <div class="flex items-center gap-3 mb-1">
+                                <span class="material-symbols-outlined text-white/40 text-sm">folder_open</span>
+                                <h4
+                                    class="font-code-sm text-headline-sm text-white group-hover:text-[#00FFFF] transition-colors">
+                                    Scheller-Labs/codex-engine</h4>
+                            </div>
+                            <p class="text-white/60 font-body-md text-sm pl-7">The underlying rendering and search
+                                engine for the S_LABS documentation system.</p>
+                        </div>
+                        <div class="mt-4 md:mt-0 flex items-center gap-6">
+                            <div class="flex flex-col items-end">
+                                <span class="font-label-caps text-[10px] text-white/40">STARS</span>
+                                <span class="font-code-sm text-white">2.4k</span>
+                            </div>
+                            <div class="w-[1px] h-8 bg-white/10"></div>
+                            <div class="flex flex-col items-end">
+                                <span class="font-label-caps text-[10px] text-[#00FFFF]">PRODUCTION</span>
+                                <span class="font-code-sm text-white">STABLE</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button
+                        class="w-full py-4 font-label-caps text-label-caps border border-dashed hover:border-[#00FFFF] hover:text-[#00FFFF] transition-all mt-6 text-[#00FFFF] border-[#00FFFF]">
+                        VIEW_ALL_REPOSITORIES (24)
                     </button>
-</div>
-</div>
-</div>
-<!-- Sketch Background Element -->
-<div class="absolute right-0 top-0 w-1/2 h-full sketch-overlay flex items-center justify-center opacity-20">
-<img alt="Neural network sketch" class="w-full h-full object-contain grayscale" data-alt="A detailed, fine-ink technical sketch of a human brain merging with a complex neural network. The style mimics an archival Renaissance parchment drawing with intricate hatching, meticulous linework, and annotated scientific observations in a fluid script. The background is a warm, aged vellum texture, creating a scholarly and sophisticated atmosphere for a modern AI research laboratory." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAeSUUzWrtH-W8eJ-4iHcEBIM9kTeGWZgNd5OABri7m2gg2MLurSXFefaIJhHDT1wx-Pc86VGAhTWl7NcGOiongmYhH04SKDRZhuYixTr0qcj-_YIgKkM45mV8-T45iO2Gfc0isiAVpJ82di9JuqerhPxyM5a4Aeft679V-1_VGwsmbA6CQAV9v3Lx1cacF7-bRyjOBxfhB2te5wfF4XCRpyEuxCnt-daZGIvFKsvHRB929ME46wzBhKa5DQzeQrziIIIwmAEBjF94"/>
-</div>
-</section>
-<!-- Featured Projects (Bento Grid) -->
-<section class="px-margin-mobile md:px-margin-desktop py-20 bg-surface-container-low/30">
-<div class="max-w-max-width mx-auto">
-<div class="flex items-baseline justify-between mb-12">
-<h2 class="font-headline-md text-headline-md">Selected Treatises</h2>
-<span class="font-label-caps text-label-caps opacity-50">ARCHIVE_VOLUME_01</span>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
-<!-- The Codex Card -->
-<div class="md:col-span-8 group relative vellum-glass p-8 min-h-[400px] flex flex-col justify-end overflow-hidden">
-<div class="absolute inset-0 z-0">
-<img alt="AI Documentation" class="w-full h-full object-cover opacity-10 grayscale group-hover:scale-105 transition-transform duration-700" data-alt="A cinematic close-up of a high-resolution digital display showing complex lines of code and generative geometric patterns. The lighting is low-key, focused on the electric cyan glow of the data visualizations. The aesthetic combines cutting-edge technology with an archival feel, featuring subtle film grain and a shallow depth of field." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4QVIkpT1ZJxiUqedce8UuirVwjUooxnKJ891VNYL2L3oHQuoHrc16WyT9wlQXGi_X7BuEsPdt8uk4nW9Pgci6mHSsfVTl_UXpXbVnnoEFs9AzqmlfLzWYoTbkeVbbzBYDyQIf3LzOMpaXjr4pUZbNmh5pGjIW_s2F8oMTrHbG1XjmCSeLXB7SMh_OWRhLiHCUK3sAGJr4H_GrDJG9GsVJqmrFOZ49xNJkrHO7x4BdV-TrJAkap52hu6DEgSkbt-xLs0LKX2EYVhY"/>
-</div>
-<div class="relative z-10">
-<span class="font-code-sm text-code-sm text-tertiary-fixed-dim bg-primary-container px-3 py-1 mb-4 inline-block">SYSTEM_DOCS</span>
-<h3 class="font-headline-md text-headline-md mb-2">The Codex</h3>
-<p class="font-body-lg text-body-lg text-on-surface-variant max-w-md mb-6">A living repository of AI documentation, mapping the neural architectures and symbolic logic used across the S_LABS ecosystem.</p>
-<a class="flex items-center gap-2 font-label-caps text-label-caps hover:text-tertiary-fixed-dim transition-colors underline decoration-dotted" href="#">READ_FULL_VOLUMES</a>
-</div>
-<div class="absolute top-4 right-4 text-on-surface/10 font-display-lg select-none">01</div>
-</div>
-<!-- Agentic Methodology Card -->
-<div class="md:col-span-4 group vellum-glass p-8 flex flex-col justify-between hover:bg-surface-variant/20 transition-all border-l-4 border-l-tertiary-fixed-dim">
-<div>
-<div class="w-12 h-12 flex items-center justify-center border border-on-surface/20 mb-8 rounded-full">
-<span class="material-symbols-outlined text-tertiary-fixed-dim">hub</span>
-</div>
-<h3 class="font-headline-sm text-headline-sm mb-4">Agentic Methodology</h3>
-<p class="font-body-md text-body-md text-on-surface-variant">Defining the framework for autonomous agent swarms, focusing on collaborative problem solving and emergent behavior.</p>
-</div>
-<div class="mt-8">
-<div class="ledger-line py-2 flex justify-between items-center group/item">
-<span class="font-label-caps text-label-caps">WHITE_PAPER_V2</span>
-<span class="material-symbols-outlined text-sm group-hover/item:translate-x-1 transition-transform">east</span>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Repository Feed (Obsidian Theme) -->
-<section class="px-margin-mobile md:px-margin-desktop py-24 text-white bg-[#121212]">
-<div class="max-w-max-width mx-auto flex flex-col md:flex-row gap-20">
-<div class="w-full md:w-1/3">
-<div class="sticky top-32">
-<span class="font-label-caps text-label-caps text-white/50">LATEST_COMMITS</span>
-<h2 class="font-headline-md text-headline-md mt-4 mb-6 text-white">Open Repository Intelligence</h2>
-<p class="font-body-md text-body-md text-white/70 mb-8 leading-relaxed">Our research is built in the open. Explore the underlying codebases for our latest model fine-tuning and autonomous framework implementations at <a class="text-[#00FFFF] underline" href="https://github.com/Scheller-Labs">github.com/Scheller-Labs</a>.</p>
-<div class="p-6 obsidian-border text-white rounded-none relative bg-[#1c1c1c]">
-<div class="flex items-center gap-4 mb-4">
-<div class="w-2 h-2 rounded-full bg-[#00FFFF] animate-pulse" style="box-shadow: 0 0 8px #00FFFF;"></div>
-<span class="font-code-sm text-code-sm">SYSTEM_HEARTBEAT: <span class="text-[#00FFFF]">STABLE</span></span>
-</div>
-<div class="font-code-sm text-code-sm opacity-60">Last commit: 4 minutes ago via <span class="text-[#00FFFF]">agent_09</span></div>
-</div>
-</div>
-</div>
-<div class="w-full md:w-2/3 space-y-4">
-<!-- Repo Item 1 -->
-<div class="p-6 flex flex-col md:flex-row justify-between items-start md:items-center group hover:border-[#00FFFF] transition-colors cursor-pointer obsidian-border bg-[#1c1c1c]">
-<div>
-<div class="flex items-center gap-3 mb-1">
-<span class="material-symbols-outlined text-white/40 text-sm">folder_open</span>
-<h4 class="font-code-sm text-headline-sm text-white group-hover:text-[#00FFFF] transition-colors">Scheller-Labs/prime-reasoner</h4>
-</div>
-<p class="text-white/60 font-body-md text-sm pl-7">Advanced logic processing for large language models using chain-of-thought fine-tuning.</p>
-</div>
-<div class="mt-4 md:mt-0 flex items-center gap-6">
-<div class="flex flex-col items-end">
-<span class="font-label-caps text-[10px] text-white/40">STARS</span>
-<span class="font-code-sm text-white">1.2k</span>
-</div>
-<div class="w-[1px] h-8 bg-white/10"></div>
-<div class="flex flex-col items-end">
-<span class="font-label-caps text-[10px] text-[#00FFFF]">ACTIVE</span>
-<span class="font-code-sm text-white">MAIN</span>
-</div>
-</div>
-</div>
-<!-- Repo Item 2 -->
-<div class="p-6 flex flex-col md:flex-row justify-between items-start md:items-center group hover:border-[#00FFFF] transition-colors cursor-pointer obsidian-border bg-[#1c1c1c]">
-<div>
-<div class="flex items-center gap-3 mb-1">
-<span class="material-symbols-outlined text-white/40 text-sm">folder_open</span>
-<h4 class="font-code-sm text-headline-sm text-white group-hover:text-[#00FFFF] transition-colors">Scheller-Labs/atlas-swarm</h4>
-</div>
-<p class="text-white/60 font-body-md text-sm pl-7">A scalable architecture for coordinating 1000+ autonomous software agents.</p>
-</div>
-<div class="mt-4 md:mt-0 flex items-center gap-6">
-<div class="flex flex-col items-end">
-<span class="font-label-caps text-[10px] text-white/40">STARS</span>
-<span class="font-code-sm text-white">843</span>
-</div>
-<div class="w-[1px] h-8 bg-white/10"></div>
-<div class="flex flex-col items-end">
-<span class="font-label-caps text-[10px] text-[#00FFFF]">DEV</span>
-<span class="font-code-sm text-white">V0.9-BETA</span>
-</div>
-</div>
-</div>
-<!-- Repo Item 3 -->
-<div class="p-6 flex flex-col md:flex-row justify-between items-start md:items-center group hover:border-[#00FFFF] transition-colors cursor-pointer obsidian-border bg-[#1c1c1c]">
-<div>
-<div class="flex items-center gap-3 mb-1">
-<span class="material-symbols-outlined text-white/40 text-sm">folder_open</span>
-<h4 class="font-code-sm text-headline-sm text-white group-hover:text-[#00FFFF] transition-colors">Scheller-Labs/codex-engine</h4>
-</div>
-<p class="text-white/60 font-body-md text-sm pl-7">The underlying rendering and search engine for the S_LABS documentation system.</p>
-</div>
-<div class="mt-4 md:mt-0 flex items-center gap-6">
-<div class="flex flex-col items-end">
-<span class="font-label-caps text-[10px] text-white/40">STARS</span>
-<span class="font-code-sm text-white">2.4k</span>
-</div>
-<div class="w-[1px] h-8 bg-white/10"></div>
-<div class="flex flex-col items-end">
-<span class="font-label-caps text-[10px] text-[#00FFFF]">PRODUCTION</span>
-<span class="font-code-sm text-white">STABLE</span>
-</div>
-</div>
-</div>
-<button class="w-full py-4 font-label-caps text-label-caps border border-dashed hover:border-[#00FFFF] hover:text-[#00FFFF] transition-all mt-6 text-[#00FFFF] border-[#00FFFF]">
-                    VIEW_ALL_REPOSITORIES (24)
-                </button>
-</div>
-</div>
-</section>
-<!-- Newsletter / Ledger Subscription -->
-<section class="px-margin-mobile md:px-margin-desktop py-20 border-t border-on-surface/10">
+                </div>
+            </div>
+        </section>
+        <!-- Newsletter / Ledger Subscription -->
+        <!-- <section class="px-margin-mobile md:px-margin-desktop py-20 border-t border-on-surface/10">
 <div class="max-w-max-width mx-auto flex flex-col items-center text-center">
 <span class="material-symbols-outlined text-4xl mb-6 text-on-surface/30">history_edu</span>
 <h2 class="font-headline-md text-headline-md mb-4 font-body-lg italic">Join the New Enlightenment</h2>
@@ -305,23 +431,27 @@
 <span class="absolute -bottom-6 left-0 font-code-sm text-[10px] opacity-40">INPUT_ID: SUB_LEDGER_01</span>
 </form>
 </div>
-</section>
-</main>
-<!-- Footer -->
-<footer class="bg-surface-container-low border-t border-on-surface/10">
-<div class="flex flex-col md:flex-row justify-between items-center w-full px-margin-desktop py-8 max-w-max-width mx-auto">
-<div class="flex flex-col md:flex-row items-center gap-8">
-<div class="font-headline-sm text-headline-sm text-on-surface font-bold tracking-tighter">Scheller Labs</div>
-<div class="copyright_text font-label-caps text-label-caps text-on-surface-variant opacity-60">
-                © 1502—2024 Scheller Labs. The New Enlightenment.
+</section>-->
+    </main>
+    <!-- Footer -->
+    <footer class="bg-surface-container-low border-t border-on-surface/10">
+        <div
+            class="flex flex-col md:flex-row justify-between items-center w-full px-margin-desktop py-8 max-w-max-width mx-auto">
+            <div class="flex flex-col md:flex-row items-center gap-8">
+                <div class="font-headline-sm text-headline-sm text-on-surface font-bold tracking-tighter">Scheller Labs
+                </div>
+                <div class="copyright_text font-label-caps text-label-caps text-on-surface-variant opacity-60">
+                    © 1502—2024 Scheller Labs. The New Enlightenment.
+                </div>
             </div>
-</div>
-<nav class="flex gap-8 mt-6 md:mt-0">
-<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-tertiary-fixed-dim underline decoration-dotted transition-all" href="#">Security</a>
+            <nav class="flex gap-8 mt-6 md:mt-0">
+                <!-- <a class="font-label-caps text-label-caps text-on-surface-variant hover:text-tertiary-fixed-dim underline decoration-dotted transition-all" href="#">Security</a>
 <a class="font-label-caps text-label-caps text-on-surface-variant hover:text-tertiary-fixed-dim underline decoration-dotted transition-all" href="#">Terms</a>
 <a class="font-label-caps text-label-caps text-on-surface-variant hover:text-tertiary-fixed-dim underline decoration-dotted transition-all" href="#">Privacy</a>
-<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-tertiary-fixed-dim underline decoration-dotted transition-all" href="#">Status</a>
-</nav>
-</div>
-</footer>
-</body></html>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-tertiary-fixed-dim underline decoration-dotted transition-all" href="#">Status</a>-->
+            </nav>
+        </div>
+    </footer>
+</body>
+
+</html>
